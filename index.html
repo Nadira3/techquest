@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Specialty Quiz</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tech Specialty Quiz</h1>
+        <form id="quizForm">
+            <!-- Section 1: Cognitive and Problem-Solving Style -->
+            <div class="section" id="section1">
+                <h2>Section 1: Cognitive and Problem-Solving Style</h2>
+                <label>1. I enjoy finding patterns in data and analyzing statistics.</label>
+                <div class="options">
+                    <input type="radio" name="q1" value="1" required> 1
+                    <input type="radio" name="q1" value="2"> 2
+                    <input type="radio" name="q1" value="3"> 3
+                    <input type="radio" name="q1" value="4"> 4
+                    <input type="radio" name="q1" value="5"> 5
+                </div>
+                
+                <label>2. I’m energized by exploring complex systems or algorithms.</label>
+                <div class="options">
+                    <input type="radio" name="q2" value="1" required> 1
+                    <input type="radio" name="q2" value="2"> 2
+                    <input type="radio" name="q2" value="3"> 3
+                    <input type="radio" name="q2" value="4"> 4
+                    <input type="radio" name="q2" value="5"> 5
+                </div>
+
+                <label>3. I thrive on making strategic decisions to solve big problems.
+</label>
+                <div class="options">
+                    <input type="radio" name="q3" value="1" required> 1
+                    <input type="radio" name="q3" value="2"> 2
+                    <input type="radio" name="q3" value="3"> 3
+                    <input type="radio" name="q3" value="4"> 4
+                    <input type="radio" name="q3" value="5"> 5
+                </div>
+
+                <label>4. I’m comfortable using mathematical or analytical thinking to solve problems.</label>
+                <div class="options">
+                    <input type="radio" name="q4" value="1" required> 1
+                    <input type="radio" name="q4" value="2"> 2
+                    <input type="radio" name="q4" value="3"> 3
+                    <input type="radio" name="q4" value="4"> 4
+                    <input type="radio" name="q4" value="5"> 5
+                </div>
+
+                <label>5. I often break down larger goals into achievable steps for problem-solving.</label>
+                <div class="options">
+                    <input type="radio" name="q5" value="1" required> 1
+                    <input type="radio" name="q5" value="2"> 2
+                    <input type="radio" name="q5" value="3"> 3
+                    <input type="radio" name="q5" value="4"> 4
+                    <input type="radio" name="q5" value="5"> 5
+                </div>
+
+                <!-- Add remaining questions in this section -->
+                <button type="button" onclick="nextSection(1)">Next Section</button>
+            </div>
+
+            <!-- Repeat for remaining sections, updating ids and buttons accordingly -->
+            <div class="section" id="section2" style="display:none;">
+                <h2>Section 2: Learning Preferences and Adaptability
+</h2>
+                <label>6. I prefer hands-on experimentation and learn best by doing.</label>
+                <div class="options">
+                    <input type="radio" name="q6" value="1" required> 1
+                    <input type="radio" name="q6" value="2"> 2
+                    <input type="radio" name="q6" value="3"> 3
+                    <input type="radio" name="q6" value="4"> 4
+                    <input type="radio" name="q6" value="5"> 5
+                </div>
+                
+                <label>7. I am comfortable with independent research and self-guided learning.</label>
+                <div class="options">
+                    <input type="radio" name="q7" value="1" required> 1
+                    <input type="radio" name="q7" value="2"> 2
+                    <input type="radio" name="q7" value="3"> 3
+                    <input type="radio" name="q7" value="4"> 4
+                    <input type="radio" name="q7" value="5"> 5
+                </div>
+
+                <label>8. I enjoy diving deep into a topic to master it.</label>
+                <div class="options">
+                    <input type="radio" name="q8" value="1" required> 1
+                    <input type="radio" name="q8" value="2"> 2
+                    <input type="radio" name="q8" value="3"> 3
+                    <input type="radio" name="q8" value="4"> 4
+                    <input type="radio" name="q8" value="5"> 5
+                </div>
+
+                <label>9. I like working on fast-evolving projects that require me to learn new skills quickly.</label>
+                <div class="options">
+                    <input type="radio" name="q9" value="1" required> 1
+                    <input type="radio" name="q9" value="2"> 2
+                    <input type="radio" name="q9" value="3"> 3
+                    <input type="radio" name="q9" value="4"> 4
+                    <input type="radio" name="q9" value="5"> 5
+                </div>
+
+                <label>10. I’m comfortable learning and using new software tools or technical frameworks.</label>
+                <div class="options">
+                    <input type="radio" name="q10" value="1" required> 1
+                    <input type="radio" name="q10" value="2"> 2
+                    <input type="radio" name="q10" value="3"> 3
+                    <input type="radio" name="q10" value="4"> 4
+                    <input type="radio" name="q10" value="5"> 5
+                </div>
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(2)">Next Section</button>
+            </div>
+            <!-- Additional sections would go here, up to Section 8 -->
+
+            <div class="section" id="section3" style="display:none;">
+                <h2>Section 3: Technical Background and Analytical Skills</h2>
+                <label>11. I have experience with at least one programming language.</label>
+                <div class="options">
+                    <input type="radio" name="q11" value="1" required> 1
+                    <input type="radio" name="q11" value="2"> 2
+                    <input type="radio" name="q11" value="3"> 3
+                    <input type="radio" name="q11" value="4"> 4
+                    <input type="radio" name="q11" value="5"> 5
+                </div>
+                
+                <label>12. I’m familiar with data analysis tools like SQL, Excel, Python, or R.</label>
+                <div class="options">
+                    <input type="radio" name="q12" value="1" required> 1
+                    <input type="radio" name="q12" value="2"> 2
+                    <input type="radio" name="q12" value="3"> 3
+                    <input type="radio" name="q12" value="4"> 4
+                    <input type="radio" name="q12" value="5"> 5
+                </div>
+                
+                <label>13. I’ve used design tools like Figma, Adobe XD, or Sketch</label>
+                <div class="options">
+                    <input type="radio" name="q13" value="1" required> 1
+                    <input type="radio" name="q13" value="2"> 2
+                    <input type="radio" name="q13" value="3"> 3
+                    <input type="radio" name="q13" value="4"> 4
+                    <input type="radio" name="q13" value="5"> 5
+                </div>
+                
+                <label>14. I have a background in mathematics, logic, or algorithms.</label>
+                <div class="options">
+                    <input type="radio" name="q14" value="1" required> 1
+                    <input type="radio" name="q14" value="2"> 2
+                    <input type="radio" name="q14" value="3"> 3
+                    <input type="radio" name="q14" value="4"> 4
+                    <input type="radio" name="q14" value="5"> 5
+                </div>
+                
+                <label>15. I understand or am interested in software development processes and workflows.</label>
+                <div class="options">
+                    <input type="radio" name="q15" value="1" required> 1
+                    <input type="radio" name="q15" value="2"> 2
+                    <input type="radio" name="q15" value="3"> 3
+                    <input type="radio" name="q15" value="4"> 4
+                    <input type="radio" name="q15" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(3)">Next Section</button>
+            </div>
+
+            <div class="section" id="section4" style="display:none;">
+                <h2>Section 4: Social and Communication Skills</h2>
+		<label>16. I feel comfortable presenting ideas to a group.</label>
+                <div class="options">
+                    <input type="radio" name="q16" value="1" required> 1
+                    <input type="radio" name="q16" value="2"> 2
+                    <input type="radio" name="q16" value="3"> 3
+                    <input type="radio" name="q16" value="4"> 4
+                    <input type="radio" name="q16" value="5"> 5
+                </div>
+                
+		<label>17. I enjoy building communities or engaging with others online.</label>
+                <div class="options">
+                    <input type="radio" name="q17" value="1" required> 1
+                    <input type="radio" name="q17" value="2"> 2
+                    <input type="radio" name="q17" value="3"> 3
+                    <input type="radio" name="q17" value="4"> 4
+                    <input type="radio" name="q17" value="5"> 5
+                </div>
+                
+		<label>18. I can break down complex information so it’s easy for others to understand.</label>
+                <div class="options">
+                    <input type="radio" name="q18" value="1" required> 1
+                    <input type="radio" name="q18" value="2"> 2
+                    <input type="radio" name="q18" value="3"> 3
+                    <input type="radio" name="q18" value="4"> 4
+                    <input type="radio" name="q18" value="5"> 5
+                </div>
+                
+		<label>19. I work well in collaborative environments where we can brainstorm ideas.</label>
+                <div class="options">
+                    <input type="radio" name="q19" value="1" required> 1
+                    <input type="radio" name="q19" value="2"> 2
+                    <input type="radio" name="q19" value="3"> 3
+                    <input type="radio" name="q19" value="4"> 4
+                    <input type="radio" name="q19" value="5"> 5
+                </div>
+                
+		<label>20. I enjoy creating documentation or content that helps people learn or stay informed.</label>
+                <div class="options">
+                    <input type="radio" name="q20" value="1" required> 1
+                    <input type="radio" name="q20" value="2"> 2
+                    <input type="radio" name="q20" value="3"> 3
+                    <input type="radio" name="q20" value="4"> 4
+                    <input type="radio" name="q20" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(4)">Next Section</button>
+            </div>
+
+            <div class="section" id="section5" style="display:none;">
+                <h2>Section 5: Personal Strengths and Work Style</h2>
+		<label>21. I am detail-oriented and like to ensure that every aspect of my work is accurate.</label>
+                <div class="options">
+                    <input type="radio" name="q21" value="1" required> 1
+                    <input type="radio" name="q21" value="2"> 2
+                    <input type="radio" name="q21" value="3"> 3
+                    <input type="radio" name="q21" value="4"> 4
+                    <input type="radio" name="q21" value="5"> 5
+                </div>
+                
+		<label>22. I am good at managing multiple tasks or projects at the same time.</label>
+                <div class="options">
+                    <input type="radio" name="q22" value="1" required> 1
+                    <input type="radio" name="q22" value="2"> 2
+                    <input type="radio" name="q22" value="3"> 3
+                    <input type="radio" name="q22" value="4"> 4
+                    <input type="radio" name="q22" value="5"> 5
+                </div>
+                
+		<label>23. I prefer environments where I have a clear structure and goals.</label>
+                <div class="options">
+                    <input type="radio" name="q23" value="1" required> 1
+                    <input type="radio" name="q23" value="2"> 2
+                    <input type="radio" name="q23" value="3"> 3
+                    <input type="radio" name="q23" value="4"> 4
+                    <input type="radio" name="q23" value="5"> 5
+                </div>
+                
+		<label>24. I like brainstorming and enjoy spaces where I can think creatively.</label>
+                <div class="options">
+                    <input type="radio" name="q24" value="1" required> 1
+                    <input type="radio" name="q24" value="2"> 2
+                    <input type="radio" name="q24" value="3"> 3
+                    <input type="radio" name="q24" value="4"> 4
+                    <input type="radio" name="q24" value="5"> 5
+                </div>
+                
+		<label>25. I am resilient, able to stay motivated even when faced with challenges.</label>
+                <div class="options">
+                    <input type="radio" name="q25" value="1" required> 1
+                    <input type="radio" name="q25" value="2"> 2
+                    <input type="radio" name="q25" value="3"> 3
+                    <input type="radio" name="q25" value="4"> 4
+                    <input type="radio" name="q25" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(5)">Next Section</button>
+            </div>
+
+
+            <div class="section" id="section6" style="display:none;">
+                <h2>Section 6: Creativity and Design Aptitude</h2>
+		<label>26. I enjoy creating aesthetically pleasing designs or interfaces.</label>
+                <div class="options">
+                    <input type="radio" name="q26" value="1" required> 1
+                    <input type="radio" name="q26" value="2"> 2
+                    <input type="radio" name="q26" value="3"> 3
+                    <input type="radio" name="q26" value="4"> 4
+                    <input type="radio" name="q26" value="5"> 5
+                </div>
+                
+		<label>27. I’m interested in making user-friendly products.</label>
+                <div class="options">
+                    <input type="radio" name="q27" value="1" required> 1
+                    <input type="radio" name="q27" value="2"> 2
+                    <input type="radio" name="q27" value="3"> 3
+                    <input type="radio" name="q27" value="4"> 4
+                    <input type="radio" name="q27" value="5"> 5
+                </div>
+                
+		<label>28. I think about how to balance functionality and aesthetics in my work.</label>
+                <div class="options">
+                    <input type="radio" name="q28" value="1" required> 1
+                    <input type="radio" name="q28" value="2"> 2
+                    <input type="radio" name="q28" value="3"> 3
+                    <input type="radio" name="q28" value="4"> 4
+                    <input type="radio" name="q28" value="5"> 5
+                </div>
+                
+		<label>29. I am interested in creating engaging user experiences or game mechanics.</label>
+                <div class="options">
+                    <input type="radio" name="q29" value="1" required> 1
+                    <input type="radio" name="q29" value="2"> 2
+                    <input type="radio" name="q29" value="3"> 3
+                    <input type="radio" name="q29" value="4"> 4
+                    <input type="radio" name="q29" value="5"> 5
+                </div>
+                
+		<label>30. I am skilled at visual storytelling or using visuals to convey ideas.</label>
+                <div class="options">
+                    <input type="radio" name="q30" value="1" required> 1
+                    <input type="radio" name="q30" value="2"> 2
+                    <input type="radio" name="q30" value="3"> 3
+                    <input type="radio" name="q30" value="4"> 4
+                    <input type="radio" name="q30" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(6)">Next Section</button>
+            </div>
+
+
+            <div class="section" id="section7" style="display:none;">
+                <h2>Section 7: Writing and Content Creation</h2>
+		<label>31. I enjoy writing content that is informative and well-researched.</label>
+                <div class="options">
+                    <input type="radio" name="q31" value="1" required> 1
+                    <input type="radio" name="q31" value="2"> 2
+                    <input type="radio" name="q31" value="3"> 3
+                    <input type="radio" name="q31" value="4"> 4
+                    <input type="radio" name="q31" value="5"> 5
+                </div>
+                
+		<label>32. I am good at organizing information in a way that makes it easy to understand.</label>
+                <div class="options">
+                    <input type="radio" name="q32" value="1" required> 1
+                    <input type="radio" name="q32" value="2"> 2
+                    <input type="radio" name="q32" value="3"> 3
+                    <input type="radio" name="q32" value="4"> 4
+                    <input type="radio" name="q32" value="5"> 5
+                </div>
+                
+		<label>33. I am interested in creating tutorials, guides, or manuals for others.</label>
+                <div class="options">
+                    <input type="radio" name="q33" value="1" required> 1
+                    <input type="radio" name="q33" value="2"> 2
+                    <input type="radio" name="q33" value="3"> 3
+                    <input type="radio" name="q33" value="4"> 4
+                    <input type="radio" name="q33" value="5"> 5
+                </div>
+                
+		<label>34. I feel comfortable creating content to help teach others about technology.</label>
+                <div class="options">
+                    <input type="radio" name="q34" value="1" required> 1
+                    <input type="radio" name="q34" value="2"> 2
+                    <input type="radio" name="q34" value="3"> 3
+                    <input type="radio" name="q34" value="4"> 4
+                    <input type="radio" name="q34" value="5"> 5
+                </div>
+                
+		<label>35. I like documenting processes or creating resources to help others understand complex topics.</label>
+                <div class="options">
+                    <input type="radio" name="q35" value="1" required> 1
+                    <input type="radio" name="q35" value="2"> 2
+                    <input type="radio" name="q35" value="3"> 3
+                    <input type="radio" name="q35" value="4"> 4
+                    <input type="radio" name="q35" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+                <button type="button" onclick="nextSection(7)">Next Section</button>
+            </div>
+
+
+            <div class="section" id="section8" style="display:none;">
+                <h2>Section 8: Strategic Thinking and Product Focus</h2>
+		<label>36. I am good at identifying problems that users face and proposing solutions.</label>
+                <div class="options">
+                    <input type="radio" name="q36" value="1" required> 1
+                    <input type="radio" name="q36" value="2"> 2
+                    <input type="radio" name="q36" value="3"> 3
+                    <input type="radio" name="q36" value="4"> 4
+                    <input type="radio" name="q36" value="5"> 5
+                </div>
+                
+		<label>37. I enjoy researching user needs to create useful products.</label>
+                <div class="options">
+                    <input type="radio" name="q37" value="1" required> 1
+                    <input type="radio" name="q37" value="2"> 2
+                    <input type="radio" name="q37" value="3"> 3
+                    <input type="radio" name="q37" value="4"> 4
+                    <input type="radio" name="q37" value="5"> 5
+                </div>
+                
+		<label>38. I’m comfortable with coordinating different aspects of a project.</label>
+                <div class="options">
+                    <input type="radio" name="q38" value="1" required> 1
+                    <input type="radio" name="q38" value="2"> 2
+                    <input type="radio" name="q38" value="3"> 3
+                    <input type="radio" name="q38" value="4"> 4
+                    <input type="radio" name="q38" value="5"> 5
+                </div>
+                
+		<label>39. I think about how business needs align with product development.</label>
+                <div class="options">
+                    <input type="radio" name="q39" value="1" required> 1
+                    <input type="radio" name="q39" value="2"> 2
+                    <input type="radio" name="q39" value="3"> 3
+                    <input type="radio" name="q39" value="4"> 4
+                    <input type="radio" name="q39" value="5"> 5
+                </div>
+                
+		<label>40. I am interested in overseeing a product’s lifecycle from idea to launch.</label>
+                <div class="options">
+                    <input type="radio" name="q40" value="1" required> 1
+                    <input type="radio" name="q40" value="2"> 2
+                    <input type="radio" name="q40" value="3"> 3
+                    <input type="radio" name="q40" value="4"> 4
+                    <input type="radio" name="q40" value="5"> 5
+                </div>
+                
+                <!-- Add remaining questions for Section 2 here -->
+            	<button type="button" onclick="calculateResult()">Get My Specialty</button>
+            </div>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
